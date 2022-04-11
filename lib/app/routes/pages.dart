@@ -1,4 +1,5 @@
 import 'package:clock_app/app/routes/routes.dart';
+import 'package:clock_app/app/ui/pages/alarm_list_page/alarm_list_page.dart';
 import 'package:clock_app/app/ui/pages/home_page/home_page.dart';
 import 'package:get/get.dart';
 
@@ -9,6 +10,10 @@ class Pages {
     GetPage(
       name: Routes.HOME,
       page: () => const HomePage(),
+    ),
+    GetPage(
+      name: Routes.ALARM_LIST,
+      page: () => const AlarmListPage(),
     ),
   ];
 }
