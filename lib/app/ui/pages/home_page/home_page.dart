@@ -1,5 +1,8 @@
+import 'package:analog_clock/analog_clock.dart';
 import 'package:clock_app/app/core/values/strings.dart';
 import 'package:clock_app/app/ui/pages/home_page/local_widgets/clock.dart';
+import 'package:clock_app/app/ui/pages/home_page/local_widgets/other_time_card.dart';
+import 'package:clock_app/app/ui/pages/home_page/local_widgets/other_time_list.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -13,8 +16,14 @@ class HomePage extends StatelessWidget {
         title: Text(DateFormat('yyyy-MM-dd').format(DateTime.now())),
       ),
       body: Container(
-        child: const Clock(),
+        child: Column(
+          children: const [
+            Clock(),
+            OtherTimeList(),
+          ],
+        ),
         margin: const EdgeInsets.all(10),
+        width: MediaQuery.of(context).size.width,
       ),
     );
   }
