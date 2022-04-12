@@ -10,7 +10,7 @@ class AlarmList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemBuilder: (context, index) => const AlarmItem(),
-      cacheExtent: double.infinity,
+      cacheExtent: 10,
       itemCount: 100,
     );
   }

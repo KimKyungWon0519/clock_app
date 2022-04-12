@@ -1,4 +1,5 @@
 abstract class Routes {
-  static const HOME = '/home';
-  static const ALARM_LIST = '/alarm_list';
+  static const menu = '/menu';
+  static const home = '/home';
+  static const alarmList = '/alarm_list';
 }
